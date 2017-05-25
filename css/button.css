@@ -1,0 +1,51 @@
+.el-btn {
+    border: none; /* Remove borders */
+    color: white; /* Add a text color */
+    padding: 14px 28px; /* Add some padding */
+    cursor: pointer; /* Add a pointer cursor on mouse-over */
+}
+
+.success {background-color: #4CAF50;} /* Green */
+.success:hover {background-color: #46a049;}
+
+.info {background-color: #2196F3;} /* Blue */
+.info:hover {background: #0b7dda;}
+
+.warning {background-color: #ff9800;} /* Orange */
+.warning:hover {background: #e68a00;}
+
+.danger {background-color: #f44336;} /* Red */ 
+.danger:hover {background: #da190b;}
+
+.default {background-color: #e7e7e7; color: black;} /* Gray */ 
+.default:hover {background: #ddd;}
+
+.success-trans {background-color: transparent; border: 1px solid #4CAF50;} /* Green */
+.success-trans:hover {background-color: transparent; border: 1px solid #46a049;}
+
+.info-trans {background-color: transparent; border: 1px solid #2196F3;} /* Blue */
+.info-trans:hover {background-color: transparent; border: 1px solid #0b7dda;}
+
+.warning-trans {background-color: transparent; border: 1px solid #ff9800;} /* Orange */
+.warning-trans:hover {background-color: transparent; border: 1px solid #e68a00;}
+
+.danger-trans {background-color: transparent; border: 1px solid #f44336;} /* Red */ 
+.danger-trans:hover {background-color: transparent; border: 1px solid #da190b;}
+
+.default-trans {background-color: transparent; border: 1px solid #e7e7e7; color: black;} /* Gray */ 
+.default-trans:hover {background-color: transparent; border: 1px solid #ddd;}
+
+.btn-round{
+	border-radius: 30px;
+}
+
+
+/* USAGE EXAMPLE 
+
+<button class="btn btn-round success">Success</button>
+<button class="btn info">Info</button>
+<button class="btn warning">Warning</button>
+<button class="btn danger">Danger</button>
+<button class="btn default">Default</button>
+
+*/ 
