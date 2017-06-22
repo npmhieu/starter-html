@@ -279,6 +279,37 @@ p { font-size: 1em}
 
 .el-card{
   @include border-radius(3px);
-  @include shadow-highlight-2();
+  @include shadow-highlight-1();
 }
+
+/* LINE MIDDLE TEXT */
+/*
+Example: -------- Hello world --------
+<div class="el-wrapper169">
+	<div class="el-inner">
+	  	<img src='image.png' class='el-img-fit'>
+	</div>
+</div>
+*/
+
+@media (max-width: 767px){
+
+  .m-m0  { margin:        0 }
+  .m-mt0 { margin-top:    0 }
+  .m-mr0 { margin-right:  0 }
+  .m-mb0 { margin-bottom: 0 }
+  .m-ml0 { margin-left:   0 }
+  .m-mx0 { margin-left:   0; margin-right:  0 }
+  .m-my0 { margin-top:    0; margin-bottom: 0 }
+
+  .m-p0  { padding:        0 }
+  .m-pt0 { padding-top:    0 }
+  .m-pr0 { padding-right:  0 }
+  .m-pb0 { padding-bottom: 0 }
+  .m-pl0 { padding-left:   0 }
+  .m-px0 { padding-left:   0; padding-right:  0 }
+  .m-py0 { padding-top:    0; padding-bottom: 0 }
+
+}
+
 
