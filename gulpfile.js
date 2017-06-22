@@ -15,4 +15,4 @@ gulp.task('watch',function() {
     gulp.watch(sassFiles,['styles']);
 });
 
-gulp.task('default', ['style', 'watch']);
+gulp.task('default', ['styles', 'watch']);
