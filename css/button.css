@@ -1,8 +1,14 @@
 .el-btn {
-    border: none; /* Remove borders */
+    border: 1px solid transparent; /* Remove borders */
     color: white; /* Add a text color */
-    padding: 14px 28px; /* Add some padding */
+    padding: 9px 20px; /* Add some padding */
     cursor: pointer; /* Add a pointer cursor on mouse-over */
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+
+    -moz-transition: 250ms all ease-in-out;
+    -webkit-transition: 250ms all ease-in-out;
+    transition: 250ms all ease-in-out;
 }
 
 .success {background-color: #4CAF50;} /* Green */
@@ -20,23 +26,31 @@
 .default {background-color: #e7e7e7; color: black;} /* Gray */ 
 .default:hover {background: #ddd;}
 
-.success-trans {background-color: transparent; border: 1px solid #4CAF50;} /* Green */
+.success-trans {background-color: transparent; color:#4CAF50; border: 1px solid #4CAF50;} /* Green */
 .success-trans:hover {background-color: transparent; border: 1px solid #46a049;}
 
-.info-trans {background-color: transparent; border: 1px solid #2196F3;} /* Blue */
+.info-trans {background-color: transparent; border: 1px solid #2196F3; color: #2196F3;} /* Blue */
 .info-trans:hover {background-color: transparent; border: 1px solid #0b7dda;}
 
-.warning-trans {background-color: transparent; border: 1px solid #ff9800;} /* Orange */
+.warning-trans {background-color: transparent; border: 1px solid #ff9800; color:#ff9800} /* Orange */
 .warning-trans:hover {background-color: transparent; border: 1px solid #e68a00;}
 
-.danger-trans {background-color: transparent; border: 1px solid #f44336;} /* Red */ 
+.danger-trans {background-color: transparent; border: 1px solid #f44336; color:#f44336} /* Red */
 .danger-trans:hover {background-color: transparent; border: 1px solid #da190b;}
 
-.default-trans {background-color: transparent; border: 1px solid #e7e7e7; color: black;} /* Gray */ 
+.default-trans {background-color: transparent; border: 1px solid #e7e7e7; color: black;} /* Gray */
 .default-trans:hover {background-color: transparent; border: 1px solid #ddd;}
 
-.btn-round{
+.btn-circle{
 	border-radius: 30px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-round{
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
 }
 
 
