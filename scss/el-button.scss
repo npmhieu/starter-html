@@ -1,0 +1,69 @@
+/*==========  EL button ==========*/
+
+@import "el-colors";
+@import "el-shadow";
+
+.el-btn {
+  border: 1px solid transparent; /* Remove borders */
+  color: white; /* Add a text color */
+  padding: 9px 20px; /* Add some padding */
+  cursor: pointer; /* Add a pointer cursor on mouse-over */
+  @include shadow-button-1;
+
+  -moz-transition: 250ms all ease-in-out;
+  -webkit-transition: 250ms all ease-in-out;
+  transition: 250ms all ease-in-out;
+}
+
+.success {background-color: $success-color;} /* Green */
+.success:hover {background-color: $success-hover-color;}
+
+.info {background-color: $info-color;} /* Blue */
+.info:hover {background: $info-hover-color;}
+
+.warning {background-color: $warning-color;} /* Orange */
+.warning:hover {background: $warning-hover-color;}
+
+.danger {background-color: $error-color;} /* Red */
+.danger:hover {background: $error-hover-color;}
+
+.default {background-color: $default-color; color: black;} /* Gray */
+.default:hover {background: $default-hover-color;}
+
+.success-trans {background-color: transparent; color:$success-color; border: 1px solid $success-color;} /* Green */
+.success-trans:hover {background-color: transparent; border: 1px solid $success-hover-color;}
+
+.info-trans {background-color: transparent; border: 1px solid $info-color; color: $info-color;} /* Blue */
+.info-trans:hover {background-color: transparent; border: 1px solid $info-hover-color;}
+
+.warning-trans {background-color: transparent; border: 1px solid $warning-color; color:$warning-color} /* Orange */
+.warning-trans:hover {background-color: transparent; border: 1px solid $warning-hover-color;}
+
+.danger-trans {background-color: transparent; border: 1px solid $error-color; color:$error-color} /* Red */
+.danger-trans:hover {background-color: transparent; border: 1px solid $error-hover-color;}
+
+.default-trans {background-color: transparent; border: 1px solid $default-color; color: black;} /* Gray */
+.default-trans:hover {background-color: transparent; border: 1px solid $default-hover-color;}
+
+.btn-circle{
+  border-radius: 30px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-round{
+  border-radius: 3px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+/* USAGE EXAMPLE
+
+<button class="el-btn btn-round success">Success</button>
+<button class="el-btn btn-circle info">Info</button>
+<button class="el-btn warning">Warning</button>
+<button class="el-btn danger">Danger</button>
+<button class="el-btn default">Default</button>
+
+*/
